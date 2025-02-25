@@ -6,7 +6,7 @@ WORKDIR /app
 RUN mvn clean package -DskipTests
 
 # Utilizar la imagen oficial de OpenJDK para una fase de producción más ligera.
-FROM openjdk:17-jre-slim
+FROM amazoncorretto:17-alpine-jdk
 COPY --from=build /app/target/*.jar app.jar
 
 # Exponer el puerto en el que se ejecuta la aplicación
