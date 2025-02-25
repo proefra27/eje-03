@@ -1,0 +1,4 @@
+com\upiiz\listas\controllers\HomeController.class
+com\upiiz\listas\controllers\ProductoController.class
+com\upiiz\listas\controllers\UserController.class
+com\upiiz\listas\ListasApplication.class
